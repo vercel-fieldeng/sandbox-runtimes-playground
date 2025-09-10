@@ -1,0 +1,28 @@
+# Code Execution Result
+
+## Description
+Executed python fibonacci sequence (default)
+
+## Language & Version
+python - Python 3.9.23
+
+## Generated Code
+```python
+def fib(n):
+	seq = []
+	a, b = 0, 1
+	for _ in range(n):
+		seq.append(a)
+		a, b = b, a + b
+	return seq
+
+print(", ".join(map(str, fib(15))))
+```
+
+## Execution Output
+```
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377
+```
+
+## Generated At
+2025-09-10T19:18:33.742Z
