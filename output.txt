@@ -1,0 +1,25 @@
+# Code Execution Result
+
+## Description
+Python function to return the current time, executed as requested.
+
+## Language & Version
+python - Python 3.9.23
+
+## Generated Code
+```python
+from datetime import datetime
+
+def current_time():
+    return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+print(current_time())
+```
+
+## Execution Output
+```
+2025-09-10 19:22:46
+```
+
+## Generated At
+2025-09-10T19:22:49.186Z
