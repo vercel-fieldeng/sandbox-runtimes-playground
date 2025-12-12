@@ -1,0 +1,35 @@
+# Code Execution Result
+
+## Description
+Executed custom python code for: Write a for loop that spells out the term 'vercel' char by char at each prime number
+
+## Language & Version
+python - Python 3.9.23
+
+## Generated Code
+```python
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+word = 'vercel'
+
+# We use 1-based indexing for prime positions
+for i, char in enumerate(word, start=1):
+    if is_prime(i):
+        print(f"Index {i} is prime: {char}")
+```
+
+## Execution Output
+```
+Index 2 is prime: e
+Index 3 is prime: r
+Index 5 is prime: e
+```
+
+## Generated At
+2025-09-12T20:12:08.472Z
