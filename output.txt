@@ -1,0 +1,43 @@
+# Code Execution Result
+
+## Description
+Go function that checks the number of r's in a word and example runs.
+
+## Language & Version
+go - go version go1.24.5 linux/amd64
+
+## Generated Code
+```go
+package main
+
+import (
+	"fmt"
+)
+
+// countRs counts the number of 'r' letters in the input word
+func countRs(word string) int {
+	count := 0
+	for _, ch := range word {
+		if ch == 'r' || ch == 'R' {
+			count++
+		}
+	}
+	return count
+}
+
+func main() {
+	fmt.Println(countRs("rider")) // should print 2
+	fmt.Println(countRs("ROAR"))  // should print 2
+	fmt.Println(countRs("apple")) // should print 0
+}
+```
+
+## Execution Output
+```
+2
+2
+0
+```
+
+## Generated At
+2025-09-12T19:13:43.175Z
